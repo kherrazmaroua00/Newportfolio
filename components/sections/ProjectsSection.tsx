@@ -2,6 +2,7 @@ import Link from "next/link";
 import { projects } from "@/lib/data";
 import SectionLabel from "@/components/ui/SectionLabel";
 import FadeUp from "@/components/ui/FadeUp";
+import Image from "next/image";
 
 export default function ProjectsSection() {
   const featured = projects.find((p) => p.featured);
@@ -20,12 +21,7 @@ export default function ProjectsSection() {
             
           </h2>
         </div>
-        <Link
-          href="#"
-          className="text-green px-6 py-3.5 text-[0.72rem] tracking-[0.12em] uppercase border border-green/35 no-underline hover:border-green transition-all duration-200 hover:-translate-y-0.5"
-        >
-          View All Projects
-        </Link>
+        
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -38,7 +34,7 @@ export default function ProjectsSection() {
 
         {/* Remaining projects */}
         {rest.map((project, i) => (
-          <FadeUp key={project.id} delay={i * 100}>
+          <FadeUp key={project.id}  delay={i * 100}>
             <ProjectCard project={project} />
           </FadeUp>
         ))}
@@ -64,24 +60,10 @@ function ProjectCard({
       >
         {/* Pattern bg */}
         <div
-          className="w-full h-full flex items-center justify-center transition-transform duration-700 group-hover:scale-105"
-          style={{
-            background: "linear-gradient(135deg, rgba(52,76,42,0.08) 0%, rgba(52,76,42,0.18) 100%)",
-          }}
+          className="w-full h-full flex items-center justify-center transition-transform duration-700 group-hover:scale-105 bg-green/15 absolute inset-0"
+          
         >
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage:
-                "repeating-linear-gradient(45deg, rgba(52,76,42,0.04) 0px, rgba(52,76,42,0.04) 1px, transparent 1px, transparent 20px)",
-            }}
-          />
-          <span
-            className={`relative z-10 font-light text-green/12 ${large ? "text-7xl" : "text-5xl"}`}
-            style={{ fontFamily: "var(--font-cormorant)" }}
-          >
-            {project.title}
-          </span>
+          <Image src={project.image} alt={project.title} width={1000} height={700} className="object-cover" />
         </div>
 
         {/* Hover overlay */}

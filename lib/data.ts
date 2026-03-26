@@ -2,18 +2,18 @@ export const siteConfig = {
   name: "Maroua",
   role: "Fullstack Developer & UI/UX Designer",
   tagline: "Available for freelance",
-  email: "marouakherraz0@gmail.com",
+  email: "m.kherraz@esi-sba.dz",
   phone: "+213 697 986 927 ",
   location: "Saida, Algeria",
   bio: [
     "I am a passionate fullstack developer and UI/UX designer with a knack for crafting seamless digital experiences. With a background in both design and development, I bridge the gap between aesthetics and functionality to create interfaces that are not only visually stunning but also intuitive and user-friendly.",
   ],
   yearsExperience: 3,
-  projectsCompleted: 8,
+  projectsCompleted: 4,
   social: {
-    linkedin: "linkedin.com/in/kherraz-maroua-9b30822a1",
+    linkedin: "https://www.linkedin.com/in/kherraz-maroua-9b30822a1/",
     github: "https://github.com/kherrazmaroua00",
-    twitter: "https://x.com/kherraz_m",
+   
 
   },
 };
@@ -37,9 +37,9 @@ export const services = [
   },
   {
     num: "02",
-    title: "Frontend Development",
+    title: "Fullstack Development",
     description:
-      "Clean, performant code using React, Next.js, and TypeScript. Responsive and accessible across all devices.",
+      "Building scalable web applications with modern technologies, ensuring performance and maintainability across all devices.",
     icon: "code",
   },
   {
@@ -54,64 +54,51 @@ export const services = [
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Dashboard",
-    description: "A full-featured admin dashboard with analytics, inventory management and order tracking.",
-    tags: ["Next.js", "Tailwind", "Figma"],
+    title: "PrimmaryConnect",
+    description: "a full project ui ux design .",
+    tags: ["ui/ux", "web Design", "Figma"],
     year: "2024",
+    image: "/primmaryConnect.png",
     featured: true,
-    demoUrl: "#",
+    demoUrl: "https://www.figma.com/design/rt5bZspOTlbVpI0XjCTELc/web-projet-2cpi?node-id=0-1&t=INpcbjfhr9f0AAkc-1",
     githubUrl: "#",
   },
   {
     id: 2,
-    title: "Brand Identity System",
-    description: "Complete visual identity for a tech startup — logo, typography, color system and guidelines.",
-    tags: ["UI Design", "Figma", "Branding"],
+    title: "VR History Explorer Solar System",
+    description: "An immersive VR experience that allows users to explore the solar system and learn about its history through interactive storytelling.",
+    tags: ["ui/ux", "web Design", "Figma"],
     year: "2024",
+    image: "/vr.png",
     featured: false,
     demoUrl: "#",
     githubUrl: "#",
   },
   {
     id: 3,
-    title: "Mobile App Redesign",
-    description: "Full UX audit and redesign of a fintech mobile app, improving task completion by 35%.",
-    tags: ["React Native", "UX Research", "Prototyping"],
-    year: "2023",
+    title: "Travel landing page ",
+    description: "A responsive travel landing page built with React and Context API, featuring a dark/light mode toggle and modern UI design.",
+    tags: ["React Native", "UX Research", "Prototyping", "web Design", "Figma"],
+    year: "2024",
+    image: "/travel.png",
     featured: false,
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://www.figma.com/design/TXxQ0lVcW2dktsoLIszSG9/Travel-Booking-Website?node-id=0-1&t=wR4kzNv9BUVHQKjV-1",
+    githubUrl: "https://github.com/kherrazmaroua00/travel-landing-page",
   },
+
   {
-    id: 3,
-    title: "Mobile App Redesign",
-    description: "Full UX audit and redesign of a fintech mobile app, improving task completion by 35%.",
-    tags: ["React Native", "UX Research", "Prototyping"],
+    id: 4,
+    title: "Flower shop",
+    description: "FlowerShop is a React-based web app with a clean and modern UI for browsing flowers. Designed in Figma and styled with CSS, it includes features like a dropdown cart and responsive design, built to practice and improve frontend development and UI/UX skills.",
+    tags: ["React Native", "UX Research", "Prototyping", "web Design", "Figma" ,"JavaScript"],
     year: "2023",
+    image: "/flower.png",
     featured: false,
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://flowershop-l8ky.vercel.app/",
+    githubUrl: "https://github.com/kherrazmaroua00/flowershop",
   },
-  {
-    id: 3,
-    title: "Mobile App Redesign",
-    description: "Full UX audit and redesign of a fintech mobile app, improving task completion by 35%.",
-    tags: ["React Native", "UX Research", "Prototyping"],
-    year: "2023",
-    featured: false,
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 3,
-    title: "Mobile App Redesign",
-    description: "Full UX audit and redesign of a fintech mobile app, improving task completion by 35%.",
-    tags: ["React Native", "UX Research", "Prototyping"],
-    year: "2023",
-    featured: false,
-    demoUrl: "#",
-    githubUrl: "#",
-  },
+  
+  
 ];
 
 export const experiences = [
@@ -136,7 +123,7 @@ export const education = [
   {
     year: "2023 — 2023",
     title: "Bachelor's degree",
-    place: "higher school Sgheir Aissa, Saida",
+    place: "Higher school Sgheir Aissa, Saida",
     description:
       "Gained my bachelor's degree.",
   },
