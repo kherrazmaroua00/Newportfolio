@@ -97,8 +97,31 @@ export const projects = [
     demoUrl: "https://flowershop-l8ky.vercel.app/",
     githubUrl: "https://github.com/kherrazmaroua00/flowershop",
   },
-  
-  
+  {
+    id: 5,
+    title: "ZeroWaste application mobile",
+    description: "ZeroWaste design system. The goal was to provide a seamless experience that encourages user engagement, promotes sustainable behavior, and makes food sharing as simple and accessible as possible.",
+    tags: ["ui/ux", "App Design", "Figma"],
+    year: "2026",
+    image: "/ZeroWaste_app.png",
+    featured: false,
+    demoUrl: "https://www.figma.com/design/UyBhDoGfvC0soA4THEJooz/ZeroWaste-app?node-id=0-1&t=ZQkau4wvxHsdkysM-1",
+    githubUrl: "#",
+  },
+  {
+    id: 6,
+    title: "ZeroWaste website",
+    description: "A centralized web platform that enables food donation management, reservation tracking, community engagement, and administrative monitoring through intuitive dashboards and management tools.",
+    tags: ["ui/ux", "web Design", "web development", "Figma","front-end development"],
+    year: "2026",
+    image: "/ZeroWaste_web.jpeg",
+    featured: false,
+    demoUrl: "#",
+    githubUrl: "https://github.com/Project1cs14/front_end_web.git",
+
+
+
+  }
 ];
 
 export const experiences = [
@@ -127,9 +150,16 @@ export const education = [
     description:
       "Gained my bachelor's degree.",
   },
+  {
+  year: "2023 — Present",
+  title: "Master's Degree in Computer Science",
+  place: "Higher School of Computer Science, Sidi Bel Abbès, Algeria",
+  description:
+    "Currently pursuing a Master's degree in Computer Science."
+}
   
 ];
-
+// Testimonials from clients or colleagues pas encore utilisés dans le projet, 
 export const testimonials = [
   {
     text: "Working with Maroua was a pleasure. She understood our vision instantly and delivered beyond expectations.",

@@ -67,7 +67,7 @@ function ProjectCard({
         </div>
 
         {/* Hover overlay */}
-        <div className="absolute inset-0 bg-green/88 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-4">
+        <div className="absolute inset-0 bg-green/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-4">
           <Link
             href={project.demoUrl}
             className="text-cream text-[0.7rem] tracking-[0.16em] uppercase no-underline border border-cream/40 px-6 py-2.5 hover:bg-cream/10 hover:border-cream transition-all duration-200"
