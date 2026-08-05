@@ -97,6 +97,7 @@ export const projects = [
     demoUrl: "https://flowershop-l8ky.vercel.app/",
     githubUrl: "https://github.com/kherrazmaroua00/flowershop",
   },
+
   {
     id: 5,
     title: "ZeroWaste application mobile",
@@ -119,8 +120,17 @@ export const projects = [
     demoUrl: "#",
     githubUrl: "https://github.com/Project1cs14/front_end_web.git",
 
-
-
+  },
+  {
+    id: 7,
+    title: "Gam Assurance",
+    description: "Worked as a Front-End Developer on a geospatial earthquake risk system for insurance portfolios. The platform visualizes seismic risk, identifies high-exposure zones, and estimates potential losses using seismic zoning and PML models.",
+    tags: ["React", "next.js", "front-end development","JavaScript",'3d modeling','hackathon'],
+    year: "2026",
+    image: "/gam.png",
+    featured: false,
+    demoUrl: "#",
+    githubUrl: "https://github.com/kherrazmaroua00/nexoria.git",
   }
 ];
 
@@ -159,30 +169,4 @@ export const education = [
 }
   
 ];
-// Testimonials from clients or colleagues pas encore utilisés dans le projet, 
-export const testimonials = [
-  {
-    text: "Working with Maroua was a pleasure. She understood our vision instantly and delivered beyond expectations.",
-    name: "Ahmed B.",
-    role: "CEO, Tech Startup",
-    avatar: "A",
-  },
-  {
-    text: "The redesign she did for our platform increased user engagement by 40%. Incredibly talented designer.",
-    name: "Sara M.",
-    role: "Product Manager",
-    avatar: "S",
-  },
-  {
-    text: "Her attention to detail and clean code made the entire project a smooth, enjoyable experience.",
-    name: "Karim D.",
-    role: "Founder, E-commerce Brand",
-    avatar: "K",
-  },
-  {
-    text: "Maroua brought a creative perspective that elevated our brand identity to a whole new level.",
-    name: "Lina R.",
-    role: "Creative Director",
-    avatar: "L",
-  },
-];
+

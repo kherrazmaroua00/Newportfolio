@@ -4,8 +4,29 @@ import { siteConfig } from "@/lib/data";
 import SectionLabel from "@/components/ui/SectionLabel";
 import FadeUp from "@/components/ui/FadeUp";
 import { Mail, MapPin, Phone, Linkedin, Github } from "lucide-react";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+
 
 export default function ContactSection() {
+  const formRef = useRef(null);
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_q50m69d",
+    "template_n417jih",
+    formRef.current,
+    "p-7McDxW-1QGVgS2H"
+  )
+  .then(() => {
+    alert("Message sent 💌");
+    formRef.current.reset();
+  })
+  .catch(() => {
+    alert("Error ❌");
+  });
+};
   return (
     <section
       id="contact"
@@ -76,13 +97,13 @@ export default function ContactSection() {
 
       {/* Right — Form */}
       <FadeUp delay={150}>
-        <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+        <form className="space-y-5"  ref={formRef} onSubmit={sendEmail}>
           <div className="grid grid-cols-2 gap-4">
-            <FormField label="First Name" type="text" placeholder="Ahmed" />
-            <FormField label="Last Name" type="text" placeholder="Belkacem" />
+            <FormField label="First Name" type="text" placeholder="Ahmed" name="first_name"/>
+            <FormField label="Last Name" type="text" placeholder="Belkacem" name="last_name" />
           </div>
-          <FormField label="Email Address" type="email" placeholder="ahmed@example.com" />
-          <FormField label="Subject" type="text" placeholder="Project Inquiry" />
+          <FormField label="Email Address" type="email" placeholder="ahmed@example.com" name="email" />
+          <FormField label="Subject" type="text" placeholder="Project Inquiry" name="subject" />
 
           <div>
             <label className="block text-[0.62rem] tracking-[0.12em] uppercase text-cream/50 mb-2">
@@ -92,6 +113,7 @@ export default function ContactSection() {
               placeholder="Tell me about your project..."
               rows={5}
               className="w-full bg-cream/5 border border-cream/12 text-cream placeholder-cream/25 px-4 py-3.5 font-mono text-[0.8rem] outline-none focus:border-cream/40 focus:bg-cream/8 transition-all duration-200 resize-none"
+              name="message"
             />
           </div>
 
@@ -111,10 +133,12 @@ function FormField({
   label,
   type,
   placeholder,
+  name
 }: {
   label: string;
   type: string;
   placeholder: string;
+  name: string;
 }) {
   return (
     <div>
@@ -124,6 +148,7 @@ function FormField({
       <input
         type={type}
         placeholder={placeholder}
+        name={name}
         className="w-full bg-cream/5 border border-cream/12 text-cream placeholder-cream/25 px-4 py-3.5 font-mono text-[0.8rem] outline-none focus:border-cream/40 focus:bg-cream/8 transition-all duration-200"
       />
     </div>
