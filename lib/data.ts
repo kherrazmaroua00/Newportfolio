@@ -169,4 +169,17 @@ export const education = [
 }
   
 ];
-
+export const testimonials = [
+  {
+    name: "John Doe",
+    role: "CEO, TechCorp",
+    testimonial:
+      "Working with Maroua was a game-changer for our project. Her design skills and attention to detail brought our vision to life.",
+  },
+  {
+    name: "Jane Smith",
+    role: "Product Manager, InnovateX",
+    testimonial:
+      "Maroua's expertise in UI/UX design helped us create an intuitive and engaging user experience. Highly recommended!",
+  },
+];
