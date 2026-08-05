@@ -9,7 +9,7 @@ import { useRef } from "react";
 
 
 export default function ContactSection() {
-  const formRef = useRef<HTMLFormElement | null>(null);
+const formRef = useRef<HTMLFormElement | null>(null);
 const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
 

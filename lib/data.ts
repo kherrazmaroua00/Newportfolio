@@ -6,7 +6,7 @@ export const siteConfig = {
   phone: "+213 697 986 927 ",
   location: "Saida, Algeria",
   bio: [
-    "I am a passionate fullstack developer and UI/UX designer with a knack for crafting seamless digital experiences. With a background in both design and development, I bridge the gap between aesthetics and functionality to create interfaces that are not only visually stunning but also intuitive and user-friendly.",
+    "I am a passionate fullstack web developer and UI/UX designer with a knack for crafting seamless digital experiences. With a background in both design and development, I bridge the gap between aesthetics and functionality to create interfaces that are not only visually stunning but also intuitive and user-friendly.",
   ],
   yearsExperience: 3,
   projectsCompleted: 4,
