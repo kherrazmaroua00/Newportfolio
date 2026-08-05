@@ -9,19 +9,22 @@ import { useRef } from "react";
 
 
 export default function ContactSection() {
-  const formRef = useRef(null);
-const sendEmail = (e) => {
+  const formRef = useRef<HTMLFormElement | null>(null);
+const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
+
+  const form = formRef.current;
+  if (!form) return;
 
   emailjs.sendForm(
     "service_q50m69d",
     "template_n417jih",
-    formRef.current,
+    form,
     "p-7McDxW-1QGVgS2H"
   )
   .then(() => {
     alert("Message sent 💌");
-    formRef.current.reset();
+    form.reset();
   })
   .catch(() => {
     alert("Error ❌");
