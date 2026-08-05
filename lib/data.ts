@@ -131,6 +131,17 @@ export const projects = [
     featured: false,
     demoUrl: "#",
     githubUrl: "https://github.com/kherrazmaroua00/nexoria.git",
+  },
+  {
+    id: 8,
+    title: "Bloomie",
+    description: "A focus, planning, and wellness dashboard with a cherry blossom aesthetic — combining a to-do list, Pomodoro-style focus timer, mood tracker, and personal diary in one calm daily workspace.",
+    tags: ["ui/ux", "web Design", "Figma","full-stack development",'focus timer','mood tracker'],
+    year: "2026",
+    image: "/bloomie.png",
+    featured: false,
+    demoUrl: "https://bloomie-three.vercel.app",
+    githubUrl: "https://github.com/kherrazmaroua00/bloomie.git",
   }
 ];
 
